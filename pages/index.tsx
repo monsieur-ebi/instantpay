@@ -39,13 +39,13 @@ export default function Home() {
         <section>
           <div className="container mx-auto px-5 md:w-1/2 mb-24">
             <h1 className="text-3xl font-bold text-center">The Contract</h1>
-            <p className="text-lg mt-4">The contact is made with the clarity language of the stacks blockchain (link)And contains public and read only functions that help verify bitcoin transactions and blocks through a merkle tree (link)</p>
+            <div className="text-lg mt-4">The contact is made with the <a className="text-blue-700 hover:text-blue-500" href="https://clarity-lang.org/">clarity</a> language of the stacks blockchain And contains public and read only functions that help verify bitcoin transactions and blocks through a <a className="text-blue-700 hover:text-blue-500" href="https://learnmeabitcoin.com/technical/merkle-root">merkle tree</a> </div>
              <Image src="/images/smart_contract.avif" className="md:ml-32" height={400} width={500} alt={"Stacks"}/> 
             <div className="flex flex-col items-center mt-12 space-y-6">
               <h1 className="text-2xl font-bold text-center">Submitting Bitcoin transactions to the stacks network, How does it work?</h1>
               <div className="text-lg">This works with a stacks contract call with the parameters containing the raw transaction, block height and the merkle proof, a helper function that is read only can be find here. 
                 <a className="ml-3 text-lg text-blue-700 hover:text-blue-500" href="https://github.com/friedger/stacks-swaps/blob/main/src/lib/btcTransactions.js">Click Here</a>
-                <Image src="/images/stakcs-btc.webp" className="md:ml-32" height={400} width={500} alt={"Stacks"}/> 
+                <Image src="/images/stakcs-btc.webp" className="mt-4 md:ml-32" height={400} width={500} alt={"Stacks"}/> 
               </div>
             </div>
             <div className="flex flex-col items-center mt-12 space-y-6">
