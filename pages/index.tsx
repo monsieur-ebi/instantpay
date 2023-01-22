@@ -55,7 +55,7 @@ export default function Home() {
                 the full tx is submitted, the contract parses it and uses the parts it needs if the tx was mined, the method
                 <ul className="list-[upper-roman]">
                   <li>Returns (err ERR-OUT-OF-BOUNDS) if we read past the end of txbuff</li>
-                  <li>Returns (err ERR-VARSLICE-TOO-LONG) if we find a scriptPubKey or scriptSig that’s too long to parse.</li>
+                  <li>Returns (err ERR-VARSLICE-TOO-LONG) if we find a scriptPubKey or scriptSig thats too long to parse.</li>
                   <li>Returns (err ERR-TOO-MANY-TXOUTS) if there are more than eight inputs to read</li>
                   <li>Returns (err ERR-TOO-MANY-TXINS) if there are more than eight outputs to read</li>
                 </ul>
@@ -94,12 +94,12 @@ export default function Home() {
                   <span className="font-bold text-xl">1. Was TX Mined : </span> This is a top-level verification code to determine whether or not a bitcoin transaction was mined in a prior bitcoin block. It takes the block header and block height, the transaction, and merkle tree proof, and determines that:<br/><br/>
                   <ul className="list-disc">
                     <li className="text-lg">the block header corresponds to the block that was mined at the given bitcoin height</li>
-                    <li className="text-lg">The transaction’s merkle proof links it to the block header’s merkle root</li>
+                    <li className="text-lg">The transaction's merkle proof links it to the block header's merkle root</li>
                   </ul>
                   the block header corresponds to the block that was mined at the given bitcoin height
-                  The transaction’s merkle proof links it to the block header’s merkle root <br/><br/>
-                  The proof is a list of sibling merkle tree nodes that allow us to calculate the parent node from two children nodes in each merkle tree level, the depth of the block’s merkle tree, and in the index in the block in which the given transaction can be found (starting from 0).<br/>
-                  The first element in hashes must be the given transaction’s sibling transaction’s ID. This and the given transaction’s txid are hashed to calculate the parent hash in the merkle tree, which is then hashed with the next hash  in the proof, and so on and so forth, until the final hash can be compared against the block header’s merkle root field. The tx-index tells us in which order to hash each pair of siblings.
+                  The transaction's merkle proof links it to the block header's merkle root <br/><br/>
+                  The proof is a list of sibling merkle tree nodes that allow us to calculate the parent node from two children nodes in each merkle tree level, the depth of the block's merkle tree, and in the index in the block in which the given transaction can be found (starting from 0).<br/>
+                  The first element in hashes must be the given transaction's sibling transaction's ID. This and the given transaction's txid are hashed to calculate the parent hash in the merkle tree, which is then hashed with the next hash  in the proof, and so on and so forth, until the final hash can be compared against the block header's merkle root field. The tx-index tells us in which order to hash each pair of siblings.
                 </div>
                 <div className="text-lg mt-4">
                   <span className="font-bold text-xl">2. Parse Block header: </span>
@@ -107,7 +107,7 @@ export default function Home() {
                     <ul>
                       <li>Block Version</li>
                       <li>Parent Block Hash</li>
-                      <li>Merkle root for all this block’s transactions</li>
+                      <li>Merkle root for all this block's transactions</li>
                       <li>UNIX epoch timestamp of this block, in seconds</li>
                       <li>Compact block difficulty representation</li>
                       <li>PoW solution</li>
