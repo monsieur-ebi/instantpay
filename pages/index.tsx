@@ -82,6 +82,7 @@ export default function Home() {
               <div className="text-lg">
                 Bitcoin transaction data is pulled from a post-segwit Bitcoin node using the RPC endpoint. The node must be an archive node. Initially, it assumes that it is using a GetBlock node, since they offer a free tier node that meets all of the requirements.<br/><br/>
                 A merkle proof for the transaction is created using the merkletree node module. In the future, it may be possible to eliminate this dependency by calling the gettxoutproof endpoint of Bitcoin RPC.<br/><br/>
+                <Image src="/images/Hash_Tree.svg" className="md:ml-32" height={400} width={500} alt={"Stacks"}/> 
                 In order for the Stacks network to verify a proof, it needs to know the Stacks block height that corresponds to the block where the transaction of interest was recorded on the Bitcoin network. 
               </div>
             </div>
