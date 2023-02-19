@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
+import ContractBar from '../components/ContractBar'
 
 
 export default function Home() {
@@ -13,24 +14,27 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main >
+      <main>
         <nav className="relative container mx-auto p-6">
           <div className="flex justify-between items-center">
-            <div className="text-3xl font-bold pt-1 md:text-4xl md:text-center">
-              Bitcoin Clarity
+            <div className="text-2xl font-bold pt-1 md:text-3xl md:text-center">
+              The <span className="text-[#5546ff]">Stacks</span> Clarity Bitcoin Library             
             </div>
-            <div className="sapce-x-6">
+            {/* <div className="sapce-x-6">
               <Link href="#" className="hidden hover:text-gray-500 md:block">Home</Link>
-            </div>
+            </div> */}
             <Link href="https://discord.gg/G73cKu6xKS" className="hidden bg-black rounded-xl px-6 p-4 text-white text-xl transition ease-in hover:scale-125 duration-100 shadow-md md:block"><FaDiscord /></Link>
-          </div>   
+          </div>
         </nav>
+        <div className="flex flex-col items-center max-w-3xl mx-auto mt-4 space-x-0">
+          <ContractBar />
+        </div>
         <div className="container flex flex-col-reverse items-center px-6 mx-auto w-full mt-10 space-y-0 md:space-y-0">
           <div className="flex flex-col items-center mb-32 space-y-6">
             <h1 className="text-3xl font-bold text-center md:text-4xl md:text-left">Clarity Library</h1>
             <p className="text-xl">The <a className="text-blue-700 hover:text-blue-500" href="https://github.com/friedger/clarity-friedger-pool/blob/main/contracts/clarity-bitcoin.clar">Clarity Bitcoin Library</a> initially created by Jude Nelson is a Clarity contract that allows users to handle information from the Bitcoin blockchain. In particular, it allows us to verify whether a transaction was actually mined on the Bitcoin blockchain. </p>
             <p className="w-full text-xl">Any Bitcoin transaction can be verified that has 4 or less input parameters and 4 or less output parameters.</p>
-            <Image src="/images/stacks-btc.png" height={462} width={941} alt={"stacks-btc"}/>
+            <Image src="/images/stacks-btc.png" height={462} width={941} alt={"stacks-btc"} />
             <p className="text-xl">This is one of the places stacks meets bitcoin, this library explains  how stacks parses bitcoin transactions and block headers and verifies merkle proofs from the bitcoin chain .</p>
             <p className="text-xl w-full">Bitcoin-native integration is imperative to unleash the Stack&apos;s ecosystem potential. Stacks is the only smart contract platform that can react to events on the Bitcoin blockchain</p>
             <p className="text-xl w-full">One of the most interesting properties of the Stacks blockchain is the view of their nodes into the state of the Bitcoin blockchain. The main part of the verification is implemented in a library contract</p>
@@ -40,12 +44,12 @@ export default function Home() {
           <div className="container mx-auto px-5 md:w-1/2 mb-24">
             <h1 className="text-3xl font-bold text-center">The Contract</h1>
             <div className="text-lg mt-4">The contact is made with the <a className="text-blue-700 hover:text-blue-500" href="https://clarity-lang.org/">clarity</a> language of the stacks blockchain And contains public and read only functions that help verify bitcoin transactions and blocks through a <a className="text-blue-700 hover:text-blue-500" href="https://learnmeabitcoin.com/technical/merkle-root">merkle tree</a> </div>
-             <Image src="/images/smart_contract.avif" className="md:ml-32" height={400} width={500} alt={"Stacks"}/> 
+            <Image src="/images/smart_contract.avif" className="md:ml-32" height={400} width={500} alt={"Stacks"} />
             <div className="flex flex-col items-center mt-12 space-y-6">
               <h1 className="text-2xl font-bold text-center">Submitting Bitcoin transactions to the stacks network, How does it work?</h1>
-              <div className="text-lg">This works with a stacks contract call with the parameters containing the raw transaction, block height and the merkle proof, a helper function that is read only can be find here. 
+              <div className="text-lg">This works with a stacks contract call with the parameters containing the raw transaction, block height and the merkle proof, a helper function that is read only can be find here.
                 <a className="ml-3 text-lg text-blue-700 hover:text-blue-500" href="https://github.com/friedger/stacks-swaps/blob/main/src/lib/btcTransactions.js">Click Here</a>
-                <Image src="/images/stakcs-btc.webp" className="mt-4 md:ml-32" height={400} width={500} alt={"Stacks"}/> 
+                <Image src="/images/stakcs-btc.webp" className="mt-4 md:ml-32" height={400} width={500} alt={"Stacks"} />
               </div>
             </div>
             <div className="flex flex-col items-center mt-12 space-y-6">
@@ -68,22 +72,22 @@ export default function Home() {
             <div className="flex flex-col items-center mt-12 space-y-6">
               <h1 className="text-2xl font-bold">WHAT CAN THIS CONTRACT BE USED FOR ?</h1>
               <div className="text-lg">
-                This works with a stacks contract call with the parameters containing the raw transaction, block height and the merkle proof, a helper function that is read only can be find here<br/>
+                This works with a stacks contract call with the parameters containing the raw transaction, block height and the merkle proof, a helper function that is read only can be find here<br />
               </div>
             </div>
             <div className="flex flex-col items-center mt-12 space-y-6">
               <h1 className="text-2xl font-bold">Auditing a Stacking pool</h1>
               <div className="text-lg">
-               The Clarity Bitcoin Library can be used to audit a Stacking Pool that pays out Stacking rewards in Stacks tokens, i.e. the pool receives Bitcoin rewards that are later converted to Stacks and, finally, distributed to the pool members. Pool members could report the reward Bitcoin transactions via a Clarity contract.<br/>
+                The Clarity Bitcoin Library can be used to audit a Stacking Pool that pays out Stacking rewards in Stacks tokens, i.e. the pool receives Bitcoin rewards that are later converted to Stacks and, finally, distributed to the pool members. Pool members could report the reward Bitcoin transactions via a Clarity contract.<br />
               </div>
             </div>
             <div className="flex flex-col items-center mt-12 space-y-6">
               <h1 className="text-2xl font-bold">HOW TO VERIFY BITCOIN PROOFS</h1>
               <div className="text-lg">
-                Bitcoin transaction data is pulled from a post-segwit Bitcoin node using the RPC endpoint. The node must be an archive node. Initially, it assumes that it is using a GetBlock node, since they offer a free tier node that meets all of the requirements.<br/><br/>
-                A merkle proof for the transaction is created using the merkletree node module. In the future, it may be possible to eliminate this dependency by calling the gettxoutproof endpoint of Bitcoin RPC.<br/><br/>
-                <Image src="/images/Hash_Tree.svg" className="md:ml-32" height={400} width={500} alt={"Stacks"}/> 
-                In order for the Stacks network to verify a proof, it needs to know the Stacks block height that corresponds to the block where the transaction of interest was recorded on the Bitcoin network. 
+                Bitcoin transaction data is pulled from a post-segwit Bitcoin node using the RPC endpoint. The node must be an archive node. Initially, it assumes that it is using a GetBlock node, since they offer a free tier node that meets all of the requirements.<br /><br />
+                A merkle proof for the transaction is created using the merkletree node module. In the future, it may be possible to eliminate this dependency by calling the gettxoutproof endpoint of Bitcoin RPC.<br /><br />
+                <Image src="/images/Hash_Tree.svg" className="md:ml-32" height={400} width={500} alt={"Stacks"} />
+                In order for the Stacks network to verify a proof, it needs to know the Stacks block height that corresponds to the block where the transaction of interest was recorded on the Bitcoin network.
               </div>
             </div>
             <div className="flex flex-col items-center mt-12 space-y-6">
@@ -91,37 +95,37 @@ export default function Home() {
               <p className="text-lg">The hash values of Bitcoin block headers are available in Clarity contracts via get-block-info?. Then, it remains to just verify hashes of merkle trees, transactions and block headers. There are two main methods which are:</p>
               <div>
                 <div className="text-lg">
-                  <span className="font-bold text-xl">1. Was TX Mined : </span> This is a top-level verification code to determine whether or not a bitcoin transaction was mined in a prior bitcoin block. It takes the block header and block height, the transaction, and merkle tree proof, and determines that:<br/><br/>
+                  <span className="font-bold text-xl">1. Was TX Mined : </span> This is a top-level verification code to determine whether or not a bitcoin transaction was mined in a prior bitcoin block. It takes the block header and block height, the transaction, and merkle tree proof, and determines that:<br /><br />
                   <ul className="list-disc">
                     <li className="text-lg">the block header corresponds to the block that was mined at the given bitcoin height</li>
                     <li className="text-lg">The transaction&apos;s merkle proof links it to the block header&apos;s merkle root</li>
                   </ul>
                   the block header corresponds to the block that was mined at the given bitcoin height
-                  The transaction&apos;s merkle proof links it to the block header&apos;s merkle root <br/><br/>
-                  The proof is a list of sibling merkle tree nodes that allow us to calculate the parent node from two children nodes in each merkle tree level, the depth of the block&apos;s merkle tree, and in the index in the block in which the given transaction can be found (starting from 0).<br/>
+                  The transaction&apos;s merkle proof links it to the block header&apos;s merkle root <br /><br />
+                  The proof is a list of sibling merkle tree nodes that allow us to calculate the parent node from two children nodes in each merkle tree level, the depth of the block&apos;s merkle tree, and in the index in the block in which the given transaction can be found (starting from 0).<br />
                   The first element in hashes must be the given transaction&apos;s sibling transaction&apos;s ID. This and the given transaction&apos;s txid are hashed to calculate the parent hash in the merkle tree, which is then hashed with the next hash  in the proof, and so on and so forth, until the final hash can be compared against the block header&apos;s merkle root field. The tx-index tells us in which order to hash each pair of siblings.
                 </div>
                 <div className="text-lg mt-4">
                   <span className="font-bold text-xl">2. Parse Block header: </span>
-                    This method parses a bitcoin block header and returns a tuple structured as followed on success, the tuple data includes:-<br/>
-                    <ul>
-                      <li>Block Version</li>
-                      <li>Parent Block Hash</li>
-                      <li>Merkle root for all this block&apos;s transactions</li>
-                      <li>UNIX epoch timestamp of this block, in seconds</li>
-                      <li>Compact block difficulty representation</li>
-                      <li>PoW solution</li>
-                    </ul>
+                  This method parses a bitcoin block header and returns a tuple structured as followed on success, the tuple data includes:-<br />
+                  <ul>
+                    <li>Block Version</li>
+                    <li>Parent Block Hash</li>
+                    <li>Merkle root for all this block&apos;s transactions</li>
+                    <li>UNIX epoch timestamp of this block, in seconds</li>
+                    <li>Compact block difficulty representation</li>
+                    <li>PoW solution</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-col items-center mt-12 space-y-6">
               <h1 className="text-2xl font-bold">Applications that use the clarity bitcoin library :</h1>
               <div className="text-lg">
-                <a className="text-blue-700 hover:text-blue-400" href="https://www.catamaranswaps.org/">CATARAMAN SWAP</a> catamaran swap is using the contat method<br/><br/>
-                <a className="text-blue-700 hover:text-blue-400" href="https://www.magic.fun/">MAGIC PROTOCOL</a> is using the parse method.<br/><br/> 
-                <a className="text-blue-700 hover:text-blue-400" href="https://www.zestprotocol.com/">ZEST PROTOCOL</a> 
+                <a className="text-blue-700 hover:text-blue-400" href="https://www.catamaranswaps.org/">CATARAMAN SWAP</a> catamaran swap is using the contat method<br /><br />
+                <a className="text-blue-700 hover:text-blue-400" href="https://www.magic.fun/">MAGIC PROTOCOL</a> is using the parse method.<br /><br />
+                <a className="text-blue-700 hover:text-blue-400" href="https://www.zestprotocol.com/">ZEST PROTOCOL</a>
                 <a href=""></a>
               </div>
             </div>
@@ -129,16 +133,16 @@ export default function Home() {
         </section>
         <footer className="bg-gray-900 flex flex-col items-center">
           <div className="flex flex-row items-center space-x-6 mx-auto mt-24">
-            <a href="https://discord.gg/G73cKu6xKS"><FaDiscord className="text-4xl text-white"/></a>
-            <a href="https://twitter.com/Stacks"><FaTwitter className="text-4xl text-white"/></a>
-            <a href="https://github.com/jcnelson/clarity-bitcoin"><FaGithub className="text-4xl text-white"/></a>
+            <a href="https://discord.gg/G73cKu6xKS"><FaDiscord className="text-4xl text-white" /></a>
+            <a href="https://twitter.com/Stacks"><FaTwitter className="text-4xl text-white" /></a>
+            <a href="https://github.com/jcnelson/clarity-bitcoin"><FaGithub className="text-4xl text-white" /></a>
           </div>
           <div className="mt-12">
             <h1 className="text-white text-xl font-bold">Bitcoin Clarity Library</h1>
           </div>
           <p className="py-2 font-light text-white">Get latest news delivered to your inbox</p>
           <div className="flex flex-col items-center mt-6 mb-16 space-x-4 md:flex-row">
-            <input type="text" className="w-96 px-2 py-3 rounded-lg border-transparent bg-gray-800 focus:bg-gray-600 focus:ring-0" placeholder="Enter your Email"/>
+            <input type="text" className="w-96 px-2 py-3 rounded-lg border-transparent bg-gray-800 focus:bg-gray-600 focus:ring-0" placeholder="Enter your Email" />
             <button type="submit" className="mt-4 bg-white py-2 p-3 px-6 rounded-2xl font-bold md:mt-0">Subscribe</button>
           </div>
         </footer>
