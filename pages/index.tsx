@@ -24,7 +24,7 @@ export default function Home() {
               </div>
             </div>
           </nav>
-          <div className="w-[100%] h-8 bg-binanceLight">
+          <div className="w-[100%] h-10 md:h-8 bg-binanceLight">
             <p className="text-left text-sm md:text-md md:text-center">Register now and get verified - Enjoy Welcome Rewards up to $100!</p>
           </div>
           <div className="container flex flex-row">
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row md:justify-around">
         <div className="hidden text-3xl w-32 h-4 my-4 font-semibold md:flex"></div>
-          <div className="md:flex-auto md:w-72"> 
+          <div className="md:flex-auto w-[100%] md:w-72 overflow-hidden"> 
             <div className="text-lg text-left md:text-center mt-4 mb-1 font-semibold md:flex">What does Binance Escrow mean?<br/></div>
             <span className="text-md font-semibold">2020-11-08</span>
             <h1 className="text-2xl mt-6 font-semibold">Main Takeaways</h1>
@@ -47,7 +47,7 @@ export default function Home() {
             
             <i className='mb-8'>Learn how the escrow service works on Binance P2P and how it safeguards seller and buyer funds.</i>
 
-            <Image className='mt-8' src={"/images/573f3942-cd4b-4b86-9435-25c1d2395f65.png"} alt="logo" width={792} height={445.5}/>
+            <Image className='mt-8 pr-4' src={"/images/573f3942-cd4b-4b86-9435-25c1d2395f65.png"} alt="logo" width={792} height={445.5}/>
            
             <p className='mt-6'>An escrow service is an arrangement in which a trusted third party handles the exchange of goods or assets between the transacting parties, ensuring safety and fair trading. Binance P2P is a peer-to-peer trading market where you can safely trade crypto in exchange for your local currency. Binance P2P&apos;s escrow service safeguards every transaction, giving traders peace of mind.</p>
             <p className='mt-6'>Once the buyer places an order, the seller&apos;s cryptocurrency will automatically be transferred from the seller&apos;s wallet to the temporary deposit with Binance escrow. The cryptocurrencies will be held in the deposit guarantee until the transaction is successfully completed by both parties.</p>
@@ -67,7 +67,7 @@ export default function Home() {
             <h1 className="text-xl mt-6 font-semibold">How Does the Binance P2P Escrow Service Help Buyers?</h1>
             <p className='mt-6'>If the buyer made the payment but the seller did not release the cryptocurrency, the buyer can contact support to notify Binance&apos;s customer service that the counterparty did not release the crypto. If you are the buyer, please provide as much evidence as you can, a receipt of payment, or screenshots of the conversation you had with the seller, and once our customer service confirms the payment is made, we can release the crypto to your account.</p>
             
-            <Image className='mt-8' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={792} height={198}/>
+            <Image className='mt-8 pr-4' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={792} height={198}/>
 
             <h1 className="text-xl mt-6 font-semibold">Why Is the Escrow Service Important?</h1>
             <p className='mt-6'>The escrow service protects Binance&apos;s users from scammers. If a user tries to convince you to make a deal outside the Binance P2P platform, ignore the suggestion and open an appeal. If you make a deal outside the platform we cannot protect you. </p>
@@ -83,14 +83,14 @@ export default function Home() {
             <h1 className="text-md mt-6 font-semibold">What happens if the buyer marks the transaction as paid but the seller has not received the funds?</h1>
             <p className="mt-6">If the buyer marks the order as paid without actually making the payment, the seller can appeal and our customer support team will cancel the transaction after verifying with both the parties. Upon cancellation, the seller will receive the cryptocurrency back in the wallet.</p>
             
-            <Image className='mt-8' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={792} height={198}/>
+            <Image className='mt-8 pr-4' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={792} height={198}/>
 
             <h1 className="text-xl mt-6 font-semibold">Disclaimer</h1>
             <i className="mt-6">Your use of Binance P2P services and all information and other content (including that of third parties) included in or accessible from Binance P2P services is at your sole risk. Our only responsibility is to handle crypto transactions. All payments are final upon completion unless otherwise required by law. The Binance P2P platform has neither the right nor obligation to resolve any disputes arising from a completed payment. Neither the Binance P2P platform nor its merchants shall be responsible for any loss after a completed payment.</i>
 
           </div>
           <div className="md:flex-1 md:w-32">
-
+    
           </div>
           
         </div>
