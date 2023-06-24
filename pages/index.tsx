@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-
-
 export default function Home() {
   return (
     <>
@@ -15,7 +13,7 @@ export default function Home() {
         <meta name="description" content="How Does Binance P2P&apos;s Escrow Service Work?" data-shuvi-head="true"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="font-sans space-x-6">
         <div className="bg-[#FAFAFA]">
           <nav className="container mx-auto p-2">
             <div className="flex justify-between items-center"> 
@@ -27,19 +25,20 @@ export default function Home() {
             </div>
           </nav>
           <div className="w-[100%] h-8 bg-binanceLight">
-            <p className="text-center">Register now and get verified - Enjoy Welcome Rewards up to $100!</p>
+            <p className="text-left text-sm md:text-md md:text-center">Register now and get verified - Enjoy Welcome Rewards up to $100!</p>
           </div>
           <div className="container flex flex-row">
             <div className="hidden text-3xl w-36 h-4 my-4 font-semibold md:flex"></div>
             <h1 className="hidden text-3xl my-4 font-semibold md:flex">Binance Blog</h1>
           </div>
         </div>
-        <div className="container flex flex-col md:flex-row md:justify-around">
-          <div className="w-[100%] md:w-[70%]">
-            <div className="text-xl text-center my-4 font-semibold md:flex">What does Binance Escrow mean?<br/></div>
-            <span className="">2020-11-08</span>
-            <h1 className="text-xl mt-6 font-semibold">Main Takeaways</h1>
-            <div className="flex flex-col my-4">
+        <div className="flex flex-col md:flex-row md:justify-around">
+        <div className="hidden text-3xl w-32 h-4 my-4 font-semibold md:flex"></div>
+          <div className="md:flex-auto md:w-72"> 
+            <div className="text-lg text-left md:text-center mt-4 mb-1 font-semibold md:flex">What does Binance Escrow mean?<br/></div>
+            <span className="text-md font-semibold">2020-11-08</span>
+            <h1 className="text-2xl mt-6 font-semibold">Main Takeaways</h1>
+            <div className="flex flex-col my-4 space-y-6">
               <ul className="space-y-6 list-disc">
                 <li>An escrow is a financial and legal agreement designed to protect Buyers and Sellers in a transaction. For a fee, an independent third party holds payment until everyone fulfills their responsibilities in the transaction.</li>
                 <li>With an escrow payment, the Seller will only receive the funds when the Buyer has received and accepted the products and/or services that are part of the transaction. However, the Seller knows they will receive payment because Escrow.com is holding the funds on their behalf.</li>
@@ -68,7 +67,7 @@ export default function Home() {
             <h1 className="text-xl mt-6 font-semibold">How Does the Binance P2P Escrow Service Help Buyers?</h1>
             <p className='mt-6'>If the buyer made the payment but the seller did not release the cryptocurrency, the buyer can contact support to notify Binance&apos;s customer service that the counterparty did not release the crypto. If you are the buyer, please provide as much evidence as you can, a receipt of payment, or screenshots of the conversation you had with the seller, and once our customer service confirms the payment is made, we can release the crypto to your account.</p>
             
-            <Image className='mt-8' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={1600} height={600}/>
+            <Image className='mt-8' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={792} height={198}/>
 
             <h1 className="text-xl mt-6 font-semibold">Why Is the Escrow Service Important?</h1>
             <p className='mt-6'>The escrow service protects Binance&apos;s users from scammers. If a user tries to convince you to make a deal outside the Binance P2P platform, ignore the suggestion and open an appeal. If you make a deal outside the platform we cannot protect you. </p>
@@ -84,13 +83,15 @@ export default function Home() {
             <h1 className="text-md mt-6 font-semibold">What happens if the buyer marks the transaction as paid but the seller has not received the funds?</h1>
             <p className="mt-6">If the buyer marks the order as paid without actually making the payment, the seller can appeal and our customer support team will cancel the transaction after verifying with both the parties. Upon cancellation, the seller will receive the cryptocurrency back in the wallet.</p>
             
-            <Image className='mt-8' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={1600} height={600}/>
+            <Image className='mt-8' src={"/images/f5348b75-38fc-4804-8e45-85897519a96e.png"} alt="logo" width={792} height={198}/>
 
             <h1 className="text-xl mt-6 font-semibold">Disclaimer</h1>
             <i className="mt-6">Your use of Binance P2P services and all information and other content (including that of third parties) included in or accessible from Binance P2P services is at your sole risk. Our only responsibility is to handle crypto transactions. All payments are final upon completion unless otherwise required by law. The Binance P2P platform has neither the right nor obligation to resolve any disputes arising from a completed payment. Neither the Binance P2P platform nor its merchants shall be responsible for any loss after a completed payment.</i>
 
           </div>
-          
+          <div className="md:flex-1 md:w-32">
+
+          </div>
           
         </div>
       </main>
