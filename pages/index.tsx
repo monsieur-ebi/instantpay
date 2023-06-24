@@ -96,7 +96,7 @@ export default function Home() {
             </div>
             
 
-            <div className="pr-6">
+            <div className="p-6">
               <span className="font-bold">Disclaimer: </span><i>Your use of Binance P2P services and all information and other content (including that of third parties) included in or accessible from Binance P2P services is at your sole risk. Our only responsibility is to handle crypto transactions. All payments are final upon completion unless otherwise required by law. The Binance P2P platform has neither the right nor obligation to resolve any disputes arising from a completed payment. Neither the Binance P2P platform nor its merchants shall be responsible for any loss after a completed payment.</i>
             </div>
 
