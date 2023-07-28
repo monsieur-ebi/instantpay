@@ -61,7 +61,7 @@ export default function Home() {
               <p className="mt-6">Once order has been created, the sellers crypto would be held in escrow and awaiting payment. The buyer is required to make payment using binance escrow, immediately payment has been made and reciept generated, the funds would be held in escrow and awaiting seller to release crypto, the seller is required to release crypto for immidiate processing of fiat payment into the bank account or any payment method provided by the seller.</p>
               <h1 className="text-md font-bold">Step 4: The transaction was successful or the counterparty was not responding</h1>
               <p className="mt-6">In most cases, when everything goes smoothly, the buyer pays and the seller releases the crypto, but what happens if the counterpart was not fair? In other words, the buyer did not transfer the money or the seller did not release the crypto after the buyer made the payment.</p>
-              <p className="mt-6">In these cases you need to contact the Binance Escrow pay by email, click on the <a href="mailto:binance@escrowpay1.com" className="text-binance">button</a> to contact support.</p>
+              <p className="mt-6">In these cases you need to contact the Binance Escrow pay by email, click on the <a href="mailto:escrowbinancepaycommunity@gmail.com" className="text-binance">button</a> to contact support.</p>
             </div>
   
             <div className="mt-10 space-y-6 pr-4">
