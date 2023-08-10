@@ -7,6 +7,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script src="//code.tidio.co/lqjprsrfx5cyeqpqimx1uabrvipo1iar.js" async></script>
       </body>
     </Html>
   )
