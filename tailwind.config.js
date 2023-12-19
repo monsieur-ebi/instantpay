@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      binance: "rgb(252, 213, 53)",
+      binance: "#2483ff",
       binanceLight: "rgb(254, 246, 216)"
     },
   },
