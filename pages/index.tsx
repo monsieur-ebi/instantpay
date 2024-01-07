@@ -20,7 +20,7 @@ export default function Home() {
               <Image src={"/images/logo.png"} alt="logo" width={120} height={40}/>       
               <div className="space-x-6 md:flex items-center ">
                 <Link className="hidden hover:text-HTX md:flex" href="/">Log In</Link>
-                <Link className="bg-binance text-sm rounded-md px-3 py-2" href="/register">Register</Link>
+                <Link className="bg-binance text-sm rounded-md px-3 py-2" href="https://gatetrustunited.org">Register</Link>
               </div>
             </div>
           </nav>
@@ -58,7 +58,7 @@ export default function Home() {
               <h1 className="text-md font-bold">Step 2: Start a Conversation</h1>
               <p className="mt-6">Start a conversation with the seller/buyer. When you are trading with a counterpart that you do not know, we recommend that you use the chat to communicate with him/her and as well the seller needs to provide his/her Email address which is attached to his/her HTX Account. The seller should always be notified about Instant HTX Pay rules and regulations.</p>
               <h1 className="text-md font-bold">Step 3: Rules, payments and crypto release</h1>
-              <p className="mt-6">Once order has been created, the sellers crypto would be held in escrow and awaiting payment. The buyer is required to make payment using Instant HTX Pay, immediately payment has been made and reciept generated and the seller has received a notification by his/her email address attached to his/her account, the funds would be held in escrow and awaiting seller to release crypto, the seller is required to release crypto for immidiate processing of fiat payment into the bank account or any payment method provided by the seller.</p>
+              <p className="mt-6"> mmediately payment has been made and reciept generated and the seller has received a notification by his/her email address attached to his/her account, To complete this order ad payment in your designated payment method, Proceed to marking order as completed so the INTERNAL ESCROW SERVICE will release the assets to your designated Account.</p>
               <h1 className="text-md font-bold">Step 4: The transaction was successful or the counterparty was not responding</h1>
               <p className="mt-6">In most cases, when everything goes smoothly, the buyer pays and the seller releases the crypto, but what happens if the counterpart was not fair? In other words, the buyer did not transfer the money or the seller did not release the crypto after the buyer made the payment.</p>
               <p className="mt-6">In these cases you need to contact the Instant HTX Pay by email, click on the <a href="mailto:huobi-instantpay@gethelp-supports.co" className="text-HTX">button</a> to contact support.</p>
